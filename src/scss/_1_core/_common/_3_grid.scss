@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------------------------
+### Core --> Common -> Grid
+--------------------------------------------------------------------------------*/
+// Row
+//
+// Rows contain your columns.
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(#{$gutter} * -0.5);
+    margin-left: calc(#{$gutter} * -0.5);
+
+    > * {
+        @include make-col-ready();
+    }
+
+    > .row {
+        padding-left: calc(#{$gutter} * 0.5);
+        padding-right: calc(#{$gutter} * 0.5);
+    }
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+@include make-grid-columns();
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+.container,
+.container-fluid,
+.container-sm,
+.container-lg,
+.container-xl {
+    width: 100%;
+    padding-right: calc(#{$gutter} * 0.5);
+    padding-left: calc(#{$gutter} * 0.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// 768px
+@include media-breakpoint-up(md) {
+    .container-sm {
+        max-width: 675px;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+}
+
+// 992px
+@include media-breakpoint-up(lg) {
+    .container-sm {
+        max-width: 790px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .container-xl {
+        max-width: 960px;
+    }
+}
+
+// 1200px
+@include media-breakpoint-up(xl) {
+    .container-sm {
+        max-width: 950px;
+    }
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .container-lg {
+        max-width: 1140px;
+    }
+
+    .container-xl {
+        max-width: 1180px;
+    }
+}
+
+// 1600px
+@include media-breakpoint-up(xxl) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .container-lg {
+        max-width: 1325px;
+    }
+
+    .container-xl {
+        max-width: 1530px;
+    }
+}

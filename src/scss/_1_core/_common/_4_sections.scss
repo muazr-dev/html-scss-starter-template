@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------------------------
+### Core --> Common -> Sections
+--------------------------------------------------------------------------------*/
+#main {
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.page-loaded {
+    #main {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// Section
+.section {
+    width: 100%;
+    position: relative;
+
+    &.send-back {
+        z-index: -1;
+    }
+
+    .sec-bg-ov {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 20%;
+
+        &.sec-bg-ov-2,
+        &.sec-bg-ov-3 {
+            width: 30%;
+        }
+
+        &.sec-bg-ov-1 {
+            left: 0;
+            height: calc(100% + 100px);
+            transform: translateY(-50px);
+        }
+
+        &.sec-bg-ov-2 {
+            left: 20%;
+            height: calc(100% + 200px);
+            transform: translateY(-100px);
+        }
+
+        &.sec-bg-ov-3 {
+            left: 50%;
+            height: calc(100% + 300px);
+            transform: translateY(-150px);
+        }
+
+        &.sec-bg-ov-4 {
+            left: 80%;
+            height: calc(100% + 200px);
+            transform: translateY(-100px);
+        }
+
+        @include media-breakpoint-down(md) {
+            .sec-bg-ov {
+                width: 50%;
+
+                &.sec-bg-ov-1 {
+                    width: 50%;
+                }
+
+                &.sec-bg-ov-2 {
+                    width: 50%;
+                    left: 50%;
+                }
+
+                &.sec-bg-ov-3,
+                &.sec-bg-ov-4 {
+                    display: none;
+                }
+            }
+        }
+
+        // No Translate
+        &.no-translate {
+            height: 100%;
+            transform: none;
+        }
+    }
+}
+
+.content-section {
+    position: relative;
+    z-index: 2;
+}

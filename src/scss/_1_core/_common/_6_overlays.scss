@@ -1,0 +1,78 @@
+/*--------------------------------------------------------------------------------
+### Core --> Common -> Overlays
+--------------------------------------------------------------------------------*/
+.overlay {
+    display: block;
+    position: fixed;
+    background: $root-layout-dark;
+    background: $root-white-100;
+    height: 0;
+    width: 0;
+    z-index: -2;
+    top: 0;
+    transition: height 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-right: 1px solid hsla(0, 0%, 48.6%, 0.2);
+
+    .overlay-1,
+    .overlay-4 {
+        width: 20%;
+    }
+
+    .overlay-2,
+    .overlay-3 {
+        width: 30%;
+    }
+
+    .overlay-1 {
+        left: 0;
+    }
+
+    .overlay-2 {
+        left: 20%;
+        transition-delay: 0.03333s;
+    }
+
+    .overlay-3 {
+        left: 50%;
+        transition-delay: 0.06667s;
+    }
+
+    .overlay-4 {
+        left: 80%;
+        transition-delay: 0.1s;
+    }
+
+    @include media-breakpoint-down(md) {
+        .overlay-1,
+        .overlay-2 {
+            width: 50%;
+        }
+
+        .overlay-2 {
+            left: 50%;
+        }
+
+        .overlay.ls-dark-go,
+        .overlay.ls-light-go {
+            height: 100%;
+            width: 50%;
+        }
+
+        .overlay.page-change {
+            width: 50%;
+        }
+
+        .overlay-3,
+        .overlay-4 {
+            display: none;
+        }
+    }
+}
+
+.overlay-out {
+    height: 0;
+}
+
+.overlay-ch-out {
+    width: 0;
+}

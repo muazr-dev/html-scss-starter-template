@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------------------------
+## Core -> Common
+--------------------------------------------------------------------------------*/
+@import '_common/__root';
+@import '_common/1_reset';
+@import '_common/2_typography';
+@import '_common/3_grid';
+@import '_common/4_sections';
+@import '_common/5_lines';
+@import '_common/6_overlays';
+@import '_common/7_loader';
+@import '_common/8_scroll_animations';
+
+img:not([src]) {
+    visibility: hidden;
+}
+
+/* Fixes Firefox anomaly during image load */
+@-moz-document url-prefix() {
+    img:-moz-loading {
+        visibility: hidden;
+    }
+}

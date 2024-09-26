@@ -1,0 +1,146 @@
+/*--------------------------------------------------------------------------------
+### Core --> Common -> Scroll Animations
+--------------------------------------------------------------------------------*/
+.has-animation {
+    transition-duration: $trans-scroll-duration;
+    transition-timing-function: $easing;
+
+    &.fade-in {
+        opacity: 0;
+
+        &.is-inview {
+            opacity: 1;
+        }
+    }
+
+    &.fade-in-up,
+    &.fade-in-down,
+    &.fade-in-left,
+    &.fade-in-right,
+    &.skew-left,
+    &.skew-up,
+    &.skew-down {
+        opacity: 0;
+
+        &.is-inview {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    &.fade-in-up {
+        transform: translateY(100px);
+    }
+
+    &.fade-in-down {
+        transform: translateY(-100px);
+    }
+
+    &.fade-in-left {
+        transform: translateX(100px);
+    }
+
+    &.fade-in-right {
+        transform: translateX(-100px);
+    }
+
+    &.skew-left,
+    &.skew-up,
+    &.skew-down {
+        transform-origin: 0 0;
+        transition: $trans-scroll;
+    }
+
+    &.skew-left {
+        transform: skewY(5deg) translateX(25%);
+    }
+
+    &.skew-up {
+        transform: skewY(5deg) translatey(50%);
+    }
+
+    &.skew-down {
+        transform: skewY(-5deg) translatey(-50%);
+    }
+
+    // Lines
+    &.lines-down,
+    &.lines-up {
+        div {
+            display: block;
+            overflow: hidden;
+        }
+    }
+
+    &.lines-fade-down,
+    &.lines-fade-up {
+        div {
+            overflow: visible;
+
+            .split-line {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &.lines-up,
+    &.lines-fade-up {
+        div {
+            .split-line {
+                display: block;
+                transform: translate3d(0, 100%, 0);
+                transition: $trans-splitlines;
+            }
+        }
+    }
+
+    &.lines-down,
+    &.lines-fade-down {
+        div {
+            .split-line {
+                display: block;
+                transform: translate3d(0, -100%, 0);
+                transition: $trans-splitlines;
+            }
+        }
+    }
+
+    &.lines-down.is-inview,
+    &.lines-fade-down.is-inview,
+    &.lines-fade-up.is-inview,
+    &.lines-up.is-inview {
+        div .split-line {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes breath {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0.2;
+    }
+}

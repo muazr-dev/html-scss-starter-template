@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------------------------
+### Core --> Common -> Loader
+--------------------------------------------------------------------------------*/
+.loading-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-transform: uppercase;
+    z-index: 99999;
+    letter-spacing: 20px;
+    font-weight: 600;
+    mix-blend-mode: difference;
+    color: $white-100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.page-change {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 20px;
+        letter-spacing: 10px;
+        white-space: nowrap;
+    }
+}
+
+.overlay.page-change {
+    width: 25%;
+    height: 100%;
+    background: $root-layout-dark;
+    z-index: 999;
+    transition: all 0s;
+}

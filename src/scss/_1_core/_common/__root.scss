@@ -1,0 +1,154 @@
+:root {
+    --starter-gutter: #{$root-gutter};
+    // Type
+    --starter-base-font-family: #{$root-font-family-base};
+    --starter-base-font-family-alt: #{$root-font-family-alt};
+    --starter-base-font-family-mono: #{$root-font-family-monospace};
+    --starter-base-font-size: #{$root-font-size-base};
+    --starter-base-line-height: #{$root-line-height-base};
+    --starter-display-1-font-size: #{$root-display-1-font-size};
+    --starter-display-2-font-size: #{$root-display-2-font-size};
+    --starter-display-3-font-size: #{$root-display-3-font-size};
+    --starter-display-4-font-size: #{$root-display-4-font-size};
+    --starter-display-5-font-size: #{$root-display-5-font-size};
+    --starter-display-6-font-size: #{$root-display-6-font-size};
+    --starter-display-7-font-size: #{$root-display-7-font-size};
+    --starter-display-8-font-size: #{$root-display-8-font-size};
+    --starter-display-9-font-size: #{$root-display-9-font-size};
+    --starter-display-10-font-size: #{$root-display-10-font-size};
+    --starter-display-11-font-size: #{$root-display-11-font-size};
+    --starter-display-12-font-size: #{$root-display-12-font-size};
+    --starter-display-13-font-size: #{$root-display-12-font-size};
+    --starter-display-14-font-size: #{$root-display-12-font-size};
+    --starter-h1-font-size: #{$root-h1-font-size};
+    --starter-h2-font-size: #{$root-h2-font-size};
+    --starter-h3-font-size: #{$root-h3-font-size};
+    --starter-h4-font-size: #{$root-h4-font-size};
+    --starter-h5-font-size: #{$root-h5-font-size};
+    --starter-h6-font-size: #{$root-h6-font-size};
+    --starter-h7-font-size: #{$root-h7-font-size};
+    --starter-h8-font-size: #{$root-h8-font-size};
+    --starter-h9-font-size: #{$root-h9-font-size};
+    --starter-h10-font-size: #{$root-h10-font-size};
+    --starter-h11-font-size: #{$root-h11-font-size};
+    --starter-h12-font-size: #{$root-h12-font-size};
+    --starter-h13-font-size: #{$root-h13-font-size};
+    --starter-h14-font-size: #{$root-h14-font-size};
+    --starter-h15-font-size: #{$root-h15-font-size};
+    --starter-h16-font-size: #{$root-h16-font-size};
+    --starter-h17-font-size: #{$root-h17-font-size};
+    --starter-h18-font-size: #{$root-h18-font-size};
+    --starter-h19-font-size: #{$root-h19-font-size};
+    --starter-h20-font-size: #{$root-h20-font-size};
+    --starter-small-font-size: #{$root-small-font-size};
+    --starter-small-xs-font-size: #{$root-small-xs-font-size};
+    --starter-small-sm-font-size: #{$root-small-sm-font-size};
+    --starter-small-lg-font-size: #{$root-small-lg-font-size};
+    --starter-caption-font-size: #{$root-caption-font-size};
+    --starter-caption-sm-font-size: #{$root-caption-sm-font-size};
+    --starter-caption-xs-font-size: #{$root-caption-xs-font-size};
+    --starter-lead-font-size: #{$root-lead-font-size};
+    --starter-lead-lg-font-size: #{$root-lead-lg-font-size};
+    --starter-big-lead-font-size: #{$root-big-lead-font-size};
+    --starter-blockquote-font-size: #{$root-blockquote-font-size};
+
+    @include media-breakpoint-up(md) {
+        @if ($root-font-size-base-md == null) {
+            --starter-base-font-size: #{$root-font-size-base-md};
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        --starter-blockquote-font-size: #{$root-blockquote-font-size-lg};
+    }
+
+    @include media-breakpoint-up(xl) {
+        --starter-blockquote-font-size: #{$root-blockquote-font-size-xl};
+    }
+
+    @include media-breakpoint-up(xxl) {
+        --starter-gutter: #{$root-gutter-xxl};
+        --starter-blockquote-font-size: #{$root-blockquote-font-size-xxl};
+    }
+
+    // Colors
+
+    // Body - Paragraph - Default
+    --starter-base-bg: #{$root-base-bg};
+    --starter-base-color: #{$root-text-color};
+
+    // Gray
+    --starter-white: #{$root-white};
+    --starter-gray-100: #{$root-gray-100};
+    --starter-gray-200: #{$root-gray-200};
+    --starter-gray-300: #{$root-gray-300};
+    --starter-gray-400: #{$root-gray-400};
+    --starter-gray-500: #{$root-gray-500};
+    --starter-gray-600: #{$root-gray-600};
+    --starter-gray-700: #{$root-gray-700};
+    --starter-gray-800: #{$root-gray-800};
+    --starter-gray-900: #{$root-gray-900};
+    --starter-black: #{$root-black};
+
+    // Theme
+    --starter-primary: #{$root-primary};
+    --starter-primary-rgb: #{to-rgb($root-primary)};
+    --starter-secondary: #{$root-secondary};
+    --starter-secondary-rgb: #{to-rgb($root-secondary)};
+    --starter-light: #{$root-light};
+    --starter-dark: #{$root-dark};
+
+    --starter-secondary-dark: #{$root-secondary-dark};
+
+    // Page theme colors
+
+    --starter-hitaxi-blue: #{$root-hitaxi-blue};
+
+    // Links
+
+    --starter-link-color: #{$root-link-color};
+    --starter-link-shade-percentage: #{$root-link-shade-percentage};
+    --starter-link-hover-color: #{$root-link-hover-color};
+    --starter-link-hover-decoration: #{$root-link-hover-decoration};
+
+    // Mark
+    --starter-mark-bg: #{$root-mark-bg};
+
+    // Headings
+    --starter-headings-color: #{$root-headings-color};
+
+    // Blockquote
+    --starter-blockquote-footer-color: #{$root-blockquote-footer-color};
+
+    // Border & HR
+    --starter-border-color: #{$root-border-color};
+    --starter-hr-color: #{$root-hr-color};
+
+    // Code
+    --starter-code-color: #{$root-code-color};
+
+    // KBD
+    --starter-kbd-color: #{$root-kbd-color};
+    --starter-kbd-bg: #{$root-kbd-bg};
+
+    // Pre
+    --starter-pre-color: #{$root-pre-color};
+
+    // Caption
+    --starter-caption-color: #{$root-caption-color};
+
+    // New
+    --starter-layout-dark: #{$root-layout-dark};
+    --starter-white-100: #{$root-white-100};
+    --starter-gray: #{$root-gray-550};
+    --starter-gray-650: #{$root-gray-650};
+    --starter-client-feedback-bg: #{$root-client-feedback-bg};
+    --starter-marquee-gray: #{$root-marquee-gray};
+    --starter-footer-light: #{$root-footer-light};
+    --starter-copyright-text-gray: #{$root-copyright-text-gray};
+    --starter-project-banner-dark: #{$root-project-banner-dark};
+    --starter-blog-code-bg: #{$root-blog-code-bg};
+    --starter-contact-form-placeholder: #{$root-contact-form-placeholder};
+    --starter-contact-input-bg: #{$root-contact-input-bg};
+    --starter-header-after: #{$header-after};
+}
