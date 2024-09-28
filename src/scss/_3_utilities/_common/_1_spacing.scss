@@ -2,16 +2,11 @@
 ### Utilities -> Common -> Spacing
 --------------------------------------------------------------------------------*/
 .no-margin {
-    margin-bottom: 0;
+    margin: 0;
 }
 
-.pe-empty-space {
-    width: 100%;
-    display: block;
-
-    @include media-breakpoint-down(md) {
-        display: none;
-    }
+.no-margin-bottom {
+    margin-bottom: 0;
 }
 
 .no-gap {
@@ -20,9 +15,6 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .fit-col {
-        margin: 0;
-    }
 }
 
 @include media-breakpoint-down(md) {
