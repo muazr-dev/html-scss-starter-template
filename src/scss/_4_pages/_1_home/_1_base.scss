@@ -1,19 +1,21 @@
 /*--------------------------------------------------------------------------------
 ## Pages -> Home -> Base
 --------------------------------------------------------------------------------*/
-// .home-page-content {
-//     @include media-breakpoint-down(xxl) {
-//     }
+.home-page-content {
+    @include media-breakpoint-down(xxl) {
+    }
 
-//     // 768px
-//     @include media-breakpoint-up(md) {
-//     }
+    // 768px
+    @include media-breakpoint-up(md) {
+    }
 
-//     // 1200px
-//     @include media-breakpoint-up(xl) {
-//     }
+    // 1200px
+    @include media-breakpoint-up(xl) {
+    }
 
-//     // 1600px
-//     @include media-breakpoint-up(xxl) {
-//     }
-// }
+    // 1600px
+    @include media-breakpoint-up(xxl) {
+        background-color: #000;
+        color: #000;
+    }
+}

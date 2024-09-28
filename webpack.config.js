@@ -93,6 +93,7 @@ module.exports = (env, options) => {
         output: {
             publicPath: '/',
             filename: 'dist/js/[name].js',
+            // ['dist/js/[name].js', 'dist/css/[name].css']
             path: path.resolve(__dirname),
         },
 
@@ -150,8 +151,15 @@ module.exports = (env, options) => {
                         {
                             // compiles Sass to CSS
                             loader: 'sass-loader',
+
                             options: {
                                 sourceMap: true,
+
+                                // sassOptions: {
+                                //     includePaths: ['./src/scss/style.scss'],
+                                //     outputPath: 'dist/css/',
+                                //     name: 'style.min.css',
+                                // },
                             },
                         },
                     ],
