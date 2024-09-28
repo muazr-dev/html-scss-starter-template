@@ -1,0 +1,218 @@
+// Root SCSS Vars
+// These variables are used in :root and then css variables are set to scss
+//
+
+$root-gutter: 40px;
+$root-gutter-xxl: 60px;
+
+// -------------------------------------------------------------------------------
+// Typography - ROOT CSS Vars (Change the values below instead of SCSS Vars)
+// -------------------------------------------------------------------------------
+$root-font-family-base: 'Outfit', 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$root-font-family-alt: 'Outfit', 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$root-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
+$root-line-height-base: 1.6;
+
+// Mobile
+// Base
+$root-font-size-base: clamp(18px, calc(1.125rem + ((1vw - 3.2px) * 0.375)), 24px) !default;
+
+// Displays
+$root-display-1-font-size: clamp(52px, calc(2.88rem + ((1vw - 3.2px) * 2)), 84px) !default;
+$root-display-2-font-size: clamp(30px, calc(1.66rem + ((1vw - 3.2px) * 2.8125)), 75px) !default;
+$root-display-3-font-size: clamp(26px, calc(1.444rem + ((1vw - 3.2px) * 0.375)), 32px) !default;
+$root-display-4-font-size: clamp(22px, calc(1.222rem + ((1vw - 3.2px) * 0.625)), 32px) !default;
+$root-display-5-font-size: clamp(40px, calc(2.222rem + ((1vw - 3.2px) * 4.375)), 110px) !default;
+$root-display-6-font-size: clamp(26px, calc(1.444rem + ((1vw - 3.2px) * 1.375)), 48px) !default;
+$root-display-7-font-size: clamp(80px, calc(4.4444rem + ((1vw - 3.2px) * 7.5)), 200px) !default;
+$root-display-8-font-size: clamp(16px, calc(0.8rem + ((1vw - 3.2px) * 0.625)), 26px) !default;
+$root-display-9-font-size: clamp(36px, calc(2rem + ((1vw - 3.2px) * 0.75)), 48px) !default;
+$root-display-10-font-size: clamp(34px, calc(1.8888rem + ((1vw - 3.2px) * 0.6875)), 45px) !default;
+$root-display-11-font-size: clamp(20px, calc(1.1111rem + ((1vw - 3.2px) * 0.625)), 30px) !default;
+$root-display-12-font-size: clamp(18px, calc(1rem + ((1vw - 7.68px) * 0.5208)), 24px) !default;
+
+// Using Fonts in blog + blog-inner Pages
+$root-display-13-font-size: clamp(34px, calc(1.8888rem + ((1vw - 7.68px) * 2.2569)), 60px) !default;
+$root-display-14-font-size: clamp(28px, calc(1.5555rem + ((1vw - 7.68px) * 0.8681)), 38px) !default;
+
+// Headings
+$root-h1-font-size: clamp(43px, calc(2.388rem + ((1vw - 3.2px) * 2.3125)), 80px) !default;
+$root-h2-font-size: clamp(38px, calc(2.11rem + ((1vw - 3.2px) * 1.25)), 58px) !default;
+$root-h3-font-size: clamp(34px, calc(1.88rem + ((1vw - 3.2px) * 1.125)), 52px) !default;
+$root-h4-font-size: clamp(30px, calc(1.66rem + ((1vw - 3.2px) * 0.75)), 42px) !default;
+$root-h5-font-size: clamp(28px, calc(1.55rem + ((1vw - 3.2px) * 0.25)), 32px) !default;
+$root-h6-font-size: clamp(22px, calc(1.22rem + ((1vw - 3.2px) * 0.25)), 26px) !default;
+$root-h7-font-size: clamp(14px, calc(0.777rem + ((1vw - 3.2px) * 0.25)), 18px) !default;
+$root-h8-font-size: clamp(26px, calc(1.444rem + ((1vw - 3.2px) * 1.625)), 52px) !default;
+$root-h9-font-size: clamp(30px, calc(1.666rem + ((1vw - 3.2px) * 1.375)), 52px) !default;
+$root-h10-font-size: clamp(24px, calc(1.333rem + ((1vw - 3.2px) * 0.875)), 38px) !default;
+$root-h11-font-size: clamp(26px, calc(1.444rem + ((1vw - 3.2px) * 1.125)), 44px) !default;
+$root-h12-font-size: clamp(24px, calc(1.333rem + ((1vw - 7.68px) * 1.0417)), 36px) !default;
+$root-h13-font-size: clamp(30px, calc(1.666rem + ((1vw - 3.2px) * 0.5)), 38px) !default;
+$root-h14-font-size: clamp(14px, calc(0.77rem + ((1vw - 3.2px) * 0.125)), 16px) !default;
+$root-h15-font-size: 13px !default;
+$root-h16-font-size: clamp(18px, calc(1rem + ((1vw - 3.2px) * 0.5)), 26px) !default;
+$root-h17-font-size: clamp(14px, calc(0.777rem + ((1vw - 3.2px) * 0.5)), 22px) !default;
+$root-h18-font-size: clamp(22px, calc(1.2222rem + ((1vw - 3.2px) * 0.5)), 30px) !default;
+$root-h19-font-size: clamp(20px, calc(1.1111rem + ((1vw - 3.2px) * 0.875)), 34px) !default;
+$root-h20-font-size: clamp(12px, calc(0.6666rem + ((1vw - 3.2px) * 0.125)), 14px) !default;
+
+// Others
+$root-small-font-size: clamp(16px, calc(0.888rem + ((1vw - 3.2px) * 0.25)), 20px) !default;
+$root-small-xs-font-size: 11px !default;
+$root-small-sm-font-size: clamp(14px, calc(0.777rem + ((1vw - 9.92px) * 0.6466)), 20px) !default;
+$root-small-lg-font-size: clamp(16px, calc(0.8rem + ((1vw - 7.68px) * 0.3472)), 20px) !default;
+
+$root-caption-xs-font-size: clamp(12px, calc(0.666rem + ((1vw - 9.92px) * 0.431)), 16px) !default;
+$root-caption-sm-font-size: clamp(14px, calc(0.777rem + ((1vw - 3.2px) * 0.125)), 16px) !default;
+$root-caption-font-size: clamp(16px, calc(0.888rem + ((1vw - 3.2px) * 0.25)), 20px) !default;
+
+$root-lead-font-size: clamp(20px, calc(1.111rem + ((1vw - 3.2px) * 0.375)), 26px) !default;
+$root-lead-lg-font-size: clamp(18px, calc(1rem + ((1vw - 3.2px) * 0.75)), 30px) !default;
+$root-big-lead-font-size: clamp(27px, calc(1.5rem + ((1vw - 3.2px) * 0.5625)), 36px) !default;
+$root-blockquote-font-size: 1.75rem !default;
+
+// Tablet - 768px
+$root-font-size-base-md: 20px !default;
+$root-display-1-font-size-md: 3.25rem !default;
+$root-h1-font-size-md: 2.8rem !default;
+$root-h2-font-size-md: 2.5rem !default;
+$root-h3-font-size-md: 2.2rem !default;
+$root-h4-font-size-md: 2rem !default;
+$root-h5-font-size-md: 1.6rem !default;
+$root-h6-font-size-md: 1.3rem !default;
+$root-small-font-size-md: $root-caption-font-size !default;
+$root-caption-font-size-md: 0.95rem !default;
+$root-lead-font-size-md: $root-lead-font-size !default;
+$root-big-lead-font-size-md: $root-big-lead-font-size !default;
+$root-blockquote-font-size-md: $root-blockquote-font-size !default;
+
+// Large Tablet - 992px
+$root-font-size-base-lg: 18px !default;
+$root-display-1-font-size-lg: $root-display-1-font-size-md !default;
+$root-h1-font-size-lg: $root-h1-font-size-md !default;
+$root-h2-font-size-lg: $root-h2-font-size-md !default;
+$root-h3-font-size-lg: $root-h3-font-size-md !default;
+$root-h4-font-size-lg: $root-h4-font-size-md !default;
+$root-h5-font-size-lg: $root-h5-font-size-md !default;
+$root-h6-font-size-lg: $root-h6-font-size-md !default;
+$root-small-font-size-lg: $root-caption-font-size-md !default;
+$root-caption-font-size-lg: $root-small-font-size-md !default;
+$root-lead-font-size-lg: $root-lead-font-size-md !default;
+$root-big-lead-font-size-lg: $root-big-lead-font-size-md !default;
+$root-blockquote-font-size-lg: $root-blockquote-font-size-md !default;
+
+// Desktop - 1200px
+$root-font-size-base-xl: 20px !default;
+$root-display-1-font-size-xl: $root-display-1-font-size-lg !default;
+$root-h1-font-size-xl: 3.3rem !default;
+$root-h2-font-size-xl: $root-h2-font-size-lg !default;
+$root-h3-font-size-xl: $root-h3-font-size-lg !default;
+$root-h4-font-size-xl: $root-h4-font-size-lg !default;
+$root-h5-font-size-xl: $root-h5-font-size-lg !default;
+$root-h6-font-size-xl: $root-h6-font-size-lg !default;
+$root-small-font-size-xl: $root-caption-font-size-lg !default;
+$root-caption-font-size-xl: $root-small-font-size-lg !default;
+$root-lead-font-size-xl: $root-lead-font-size-lg !default;
+$root-big-lead-font-size-xl: $root-big-lead-font-size-lg !default;
+$root-blockquote-font-size-xl: $root-blockquote-font-size-lg !default;
+
+// Large Desktop - 1400px
+$root-font-size-base-xxl: 24px !default;
+$root-display-1-font-size-xxl: 3.5rem !default;
+$root-h1-font-size-xxl: 3.3rem !default;
+$root-h2-font-size-xxl: 2.4rem !default;
+$root-h3-font-size-xxl: 2.2rem !default;
+$root-h4-font-size-xxl: 1.75rem !default;
+$root-h5-font-size-xxl: 1.35rem !default;
+$root-h6-font-size-xxl: 1.1rem !default;
+$root-small-font-size-xxl: 0.8rem !default;
+$root-caption-font-size-xxl: 0.8rem !default;
+$root-lead-font-size-xxl: $root-lead-font-size-xl !default;
+$root-big-lead-font-size-xxl: $root-big-lead-font-size-xl !default;
+$root-blockquote-font-size-xxl: $root-blockquote-font-size-xl !default;
+
+// -------------------------------------------------------------------------------
+// Colors - ROOT CSS Vars (Change the values below instead of SCSS Vars)
+// -------------------------------------------------------------------------------
+
+// Grays
+$root-white: #fff !default;
+$root-gray-100: #f8f9fa !default;
+$root-gray-200: #e9ecef !default;
+$root-gray-300: #dee2e6 !default;
+$root-gray-400: #ced4da !default;
+$root-gray-500: #9a9a9a !default;
+$root-gray-600: #6c757d !default;
+$root-gray-700: #495057 !default;
+$root-gray-800: #343a40 !default;
+$root-gray-900: #212529 !default;
+$root-black: #000 !default;
+
+// Theme
+$root-primary: #cc0022 !default;
+$root-secondary: #17152a !default;
+$root-light: $root-gray-100 !default;
+$root-dark: $root-gray-900 !default;
+
+$root-secondary-dark: #121025 !default;
+
+//Page theme colors
+$root-hitaxi-blue: #2859d9 !default;
+
+// Typography Colors
+// ##
+
+// Body - Paragraph - Default
+$root-base-bg: $root-secondary !default;
+$root-text-color: $root-white !default;
+
+// Links
+$root-link-color: $root-primary !default;
+$root-link-shade-percentage: 20% !default;
+$root-link-hover-color: shift-color($root-link-color, $root-link-shade-percentage) !default;
+$root-link-hover-decoration: null !default;
+
+// Mark
+$root-mark-bg: #fcf8e3 !default;
+
+// Headings
+$root-headings-color: $root-white !default;
+
+// Blockquote
+$root-blockquote-footer-color: $root-gray-600 !default;
+
+// Border & HR
+$root-border-color: $root-gray-300 !default;
+$root-hr-color: inherit !default;
+
+// Code
+$root-code-color: $root-primary !default;
+
+// KBD
+$root-kbd-color: $root-white !default;
+$root-kbd-bg: $root-gray-900 !default;
+
+// Pre
+$root-pre-color: null !default;
+
+// Caption
+$root-caption-color: $root-primary !default;
+
+// New
+$root-layout-dark: #121212 !default;
+$root-white-100: #ededed !default;
+$root-gray-550: #9f9f9f !default;
+$root-gray-650: #666 !default;
+
+$root-client-feedback-bg: #201c44 !default;
+$root-marquee-gray: #999 !default;
+$root-footer-light: #ddd !default;
+$root-copyright-text-gray: #aaa !default;
+$root-project-banner-dark: #2d2d2d !default;
+$root-blog-code-bg: #0b091e !default;
+$root-contact-form-placeholder: #6c757d !default;
+$root-contact-input-bg: #23282d !default;
+$root-header-after: #cecece !default;

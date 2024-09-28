@@ -1,0 +1,73 @@
+primary: #cc0022;
+primary-dark: #b02;
+secondary: #712ca7;
+tertiary: #fed61f;
+pink-to-red: linear-gradient(92deg,rgb(214,45,156) 11.06%,rgb(219,12,62) 91.54%);
+purple-to-violet: linear-gradient(92deg,rgb(74,39,152) 11.06%,rgb(144,83,172) 91.54%);
+
+gray-1: #fafafa;
+gray-2: #fbf4f4;
+gray-3: #fcf8e3;
+gray-4: #ededed; // #e9ecef, #efefef;
+gray-5: #dddddd; // #d7d7d7;
+gray-6: #ced4da;
+gray-7: #cecece; // #c4c4c4;
+gray-8: #b9b9b9; // #b8b8b8
+gray-9: #aaaaaa;
+gray-10: #9f9f9f; // #9a9a9a; // #999999;
+gray-11: #8b8b8b;
+gray-12: #6c757d;
+gray-13: #666666;
+gray-14: #555555;
+gray-15: #454545; // #4e4e4e;
+gray-16: #353638; // #393939;
+gray-17: #2d2d2d;
+gray-18: #23282d; //  #232323, #262626, #242424, #282828;
+gray-19: #1f1f1f;
+gray-20: #1a1a1a;
+gray-21: #121212; // #151515;
+gray-22: #0c1114;
+
+purple-1: #85195a;
+purple-2: #8b26ae;
+purple-3: #7e1d8d;
+purple-4: #482278;
+purple-5: #421366;
+purple-6: #544e60;
+purple-7: #2f2643;
+purple-8: #201c44;
+purple-9: #141734;
+purple-10: #121025;
+purple-11: #0b091e;
+
+red-1: #f23c51;
+red-2: #ea3646;
+red-3: #e82a08;
+red-4 #982922;
+
+pink-1: #fe877c;
+
+green-1: #2ac367;
+green-2: #58a844;
+
+blue-1: #31a9c4;
+blue-2: #3185c2;
+blue-3: #1689c2;
+blue-4: #1d6576;
+blue-5: #0e6189;
+blue-6: #0259a9;
+blue-7: #013e77;
+blue-8: #003566;
+blue-9: #1b263b;
+
+teal-1: #006f87;
+teal-2: #005d66;
+
+yellow-1: #c0bd6c;
+yellow-2: #b79915;
+
+brown-1: #d5b26e;
+brown-2: #9b7f50;
+
+white: #fffff;
+black: #000000;

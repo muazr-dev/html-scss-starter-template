@@ -1,0 +1,30 @@
+// Grid Variables
+//
+
+// Breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1600px,
+) !default;
+
+@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
+@include _assert-starts-at-zero($grid-breakpoints, '$grid-breakpoints');
+
+// Grid Columns
+$grid-columns: 12 !default;
+$gutter: var(--starter-gutter) !default;
+$grid-row-columns: 6 !default;
+
+// Gutters
+$gutters: (
+    0: 0,
+    1: 20px,
+    2: 25px,
+    3: 25px,
+    4: 30px,
+    5: 50px,
+) !default;

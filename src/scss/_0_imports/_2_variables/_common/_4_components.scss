@@ -1,0 +1,73 @@
+// Component Variables
+//
+// General Variables
+
+// Borders
+$border-width: 1px !default;
+
+$easing: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+// Default Transitions
+$trans-d-duration: 0.5s;
+$trans-d: all $trans-d-duration cubic-bezier(0.42, 0.4, 0.26, 1.01);
+
+// Header Intro Transitions
+$trans-header-intro-duration: 0.5s;
+$trans-header-intro: all $trans-header-intro-duration cubic-bezier(0.42, 0.4, 0.26, 1.01);
+
+// Home Page Intro Transitions
+$trans-intro-duration: 1s;
+$trans-intro: transform $trans-intro-duration $easing, opacity ($trans-intro-duration * 0.5) ease;
+
+// Banners Intro Transitions
+$trans-intro-b-duration: 0.8s;
+$trans-intro-b: transform $trans-intro-b-duration $easing, opacity ($trans-intro-duration * 0.5) ease;
+
+// Scroll Transitions
+$trans-scroll-duration: 0.8s;
+$trans-scroll: transform $trans-scroll-duration $easing, opacity ($trans-intro-duration * 0.3) ease;
+
+// Split Lines Transitions
+$trans-splitlines-duration: $trans-scroll-duration;
+$trans-splitlines: all $trans-splitlines-duration cubic-bezier(0.38, 0.28, 0.39, 0.91);
+
+// Arrow List
+$arrow-svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 15 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.8884 0.506131L14.8191 4.39505C15.0603 4.63369 15.0603 5.02061 14.8191 5.25925L10.8884 9.14817C10.6472 9.38681 10.2561 9.38681 10.0149 9.14817C9.77372 8.90952 9.77372 8.52261 10.0149 8.28396L12.8912 5.43823H0V4.21606H12.8912L10.0149 1.37033C9.77372 1.13169 9.77372 0.744774 10.0149 0.506131C10.2561 0.267488 10.6472 0.267488 10.8884 0.506131Z' fill='%23CC0022'/%3E%3C/svg%3E")
+    no-repeat;
+
+// Site Header
+// ##
+$logo-height: 33px;
+$menu-toggle-height: 30px;
+
+// Mobile
+$header-pad-x: $root-gutter * 0.5;
+$header-pad-y: $header-pad-x;
+$header-sticky-pad-x: $root-gutter * 0.5;
+$header-sticky-pad-y: $root-gutter * 0.375;
+$header-height: ($header-pad-y * 2) + $logo-height;
+$header-sticky-height: ($header-sticky-pad-y * 2) + $logo-height;
+
+// Tablet - 768px
+$header-md-pad-x: $root-gutter;
+$header-md-pad-y: $header-md-pad-x;
+$header-md-sticky-pad-x: $root-gutter * 0.5;
+$header-md-sticky-pad-y: $root-gutter * 0.5;
+$header-md-height: ($header-md-pad-y * 2) + $logo-height;
+$header-md-sticky-height: ($header-md-sticky-pad-y * 2) + $logo-height;
+
+// Desktop LG - 1200px
+$header-xl-pad-x: $root-gutter * 1.5;
+$header-xl-pad-y: $header-xl-pad-x;
+$header-xl-sticky-pad-x: $root-gutter;
+$header-xl-sticky-pad-y: $root-gutter;
+$header-xl-height: ($header-xl-pad-y * 1.8) + $logo-height;
+$header-xl-sticky-height: ($header-xl-sticky-pad-y * 2) + $logo-height;
+
+// Desktop XXL - 1600px
+$header-xxl-pad-x: $root-gutter-xxl * 1.25;
+$header-xxl-pad-y: $root-gutter-xxl * 0.85;
+$header-xxl-sticky-pad-x: $root-gutter;
+$header-xxl-sticky-pad-y: $root-gutter;
+$header-xxl-height: ($header-xxl-pad-y * 1.9) + $logo-height;
+$header-xxl-sticky-height: ($header-xxl-sticky-pad-y * 2) + $logo-height;

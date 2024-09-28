@@ -1,0 +1,84 @@
+// Color Variables
+//
+
+// Grays
+$white: var(--starter-white) !default;
+$gray-100: var(--starter-gray-100) !default;
+$gray-200: var(--starter-gray-200) !default;
+$gray-300: var(--starter-gray-300) !default;
+$gray-400: var(--starter-gray-400) !default;
+$gray-500: var(--starter-gray-500) !default;
+$gray-600: var(--starter-gray-600) !default;
+$gray-700: var(--starter-gray-700) !default;
+$gray-800: var(--starter-gray-800) !default;
+$gray-900: var(--starter-gray-900) !default;
+$black: var(--starter-black) !default;
+
+// Theme
+$primary: var(--starter-primary) !default;
+$primary-rgb: var(--starter-primary-rgb) !default;
+$secondary: var(--starter-secondary) !default;
+$secondary-rgb: var(--starter-secondary-rgb) !default;
+$light: var(--starter-light) !default;
+$dark: var(--starter-dark) !default;
+
+$secondary-dark: var(--starter-secondary-dark) !default;
+
+//Page theme colors
+$hitaxi-blue: var(--starter-hitaxi-blue) !default;
+
+// Typography Colors
+// ##
+
+// Body - Paragraph - Default
+$base-bg: var(--starter-base-bg) !default;
+$text-color: var(--starter-base-color) !default;
+
+// Links
+$link-color: var(--starter-link-color) !default;
+$link-shade-percentage: var(--starter-link-shade-percentage) !default;
+$link-hover-color: var(--starter-link-hover-color) !default;
+$link-hover-decoration: var(--starter-link-hover-decoration) !default;
+
+// Mark
+$mark-bg: var(--starter-mark-bg) !default;
+
+// Headings
+$headings-color: var(--starter-headings-color) !default;
+
+// Blockquote
+$blockquote-footer-color: var(--starter-blockquote-footer-color) !default;
+
+// Border & HR
+$border-color: var(--starter-border-color) !default;
+$hr-color: var(--starter-hr-color) !default;
+
+// Code
+$code-color: var(--starter-code-color) !default;
+
+// KBD
+$kbd-color: var(--starter-kbd-color) !default;
+$kbd-bg: var(--starter-kbd-bg) !default;
+
+// Pre
+$pre-color: var(--starter-pre-color) !default;
+
+// Caption
+$caption-color: var(--starter-caption-color);
+
+// New
+$layout-dark: var(--starter-layout-dark) !default;
+$white-100: var(--starter-white-100) !default;
+$gray-550: var(--starter-gray) !default;
+$gray-650: var(--starter-gray-650) !default;
+$client-feedback-bg: var(--starter-client-feedback-bg) !default;
+$marquee-gray: var(--starter-marquee-gray) !default;
+$footer-light: var(--starter-footer-light) !default;
+$copyright-text-gray: var(--starter-copyright-text-gray) !default;
+$project-banner-dark: var(--starter-project-banner-dark) !default;
+$blog-code-bg: var(--starter-blog-code-bg) !default;
+$header-after: var(--starter-header-after) !default;
+
+// Contact Form
+$contact-form-placeholder: var(--starter-contact-form-placeholder) !default;
+$contact-input-bg: var(--starter-contact-input-bg) !default;

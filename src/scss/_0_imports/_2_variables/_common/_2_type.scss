@@ -1,0 +1,124 @@
+// Typography Variables
+//
+
+// -------------------------------------------------------------------------------
+// Font Family
+// -------------------------------------------------------------------------------
+$font-family-base: var(--starter-base-font-family) !default;
+$font-family-alt: var(--starter-base-font-family-alt) !default;
+$font-family-monospace: var(--starter-base-font-family-mono) !default;
+$line-height-base: var(--starter-base-line-height) !default;
+
+// -------------------------------------------------------------------------------
+// Font Sizes - SCSS Vars (Inherit CSS Vars) No need to change anything here
+// -------------------------------------------------------------------------------
+
+// Base
+$font-size-base: var(--starter-base-font-size) !default;
+
+// Displays
+$display-1-font-size: var(--starter-display-1-font-size) !default;
+$display-2-font-size: var(--starter-display-2-font-size) !default;
+$display-3-font-size: var(--starter-display-3-font-size) !default;
+$display-4-font-size: var(--starter-display-4-font-size) !default;
+$display-5-font-size: var(--starter-display-5-font-size) !default;
+$display-6-font-size: var(--starter-display-6-font-size) !default;
+$display-7-font-size: var(--starter-display-7-font-size) !default;
+$display-8-font-size: var(--starter-display-8-font-size) !default;
+$display-9-font-size: var(--starter-display-9-font-size) !default;
+$display-10-font-size: var(--starter-display-10-font-size) !default;
+$display-11-font-size: var(--starter-display-11-font-size) !default;
+$display-12-font-size: var(--starter-display-12-font-size) !default;
+$display-13-font-size: var(--starter-display-12-font-size) !default;
+$display-14-font-size: var(--starter-display-12-font-size) !default;
+
+// Headings
+$h1-font-size: var(--starter-h1-font-size) !default;
+$h2-font-size: var(--starter-h2-font-size) !default;
+$h3-font-size: var(--starter-h3-font-size) !default;
+$h4-font-size: var(--starter-h4-font-size) !default;
+$h5-font-size: var(--starter-h5-font-size) !default;
+$h6-font-size: var(--starter-h6-font-size) !default;
+$h7-font-size: var(--starter-h7-font-size) !default;
+$h8-font-size: var(--starter-h8-font-size) !default;
+$h9-font-size: var(--starter-h9-font-size) !default;
+$h10-font-size: var(--starter-h10-font-size) !default;
+$h11-font-size: var(--starter-h11-font-size) !default;
+$h12-font-size: var(--starter-h12-font-size) !default;
+$h13-font-size: var(--starter-h13-font-size) !default;
+$h14-font-size: var(--starter-h14-font-size) !default;
+$h15-font-size: var(--starter-h15-font-size) !default;
+$h16-font-size: var(--starter-h16-font-size) !default;
+$h17-font-size: var(--starter-h17-font-size) !default;
+$h18-font-size: var(--starter-h18-font-size) !default;
+$h19-font-size: var(--starter-h19-font-size) !default;
+$h20-font-size: var(--starter-h20-font-size) !default;
+
+// Others
+$small-font-size: var(--starter-small-font-size) !default;
+$small-xs-font-size: var(--starter-small-xs-font-size) !default;
+$small-sm-font-size: var(--starter-small-sm-font-size) !default;
+$small-lg-font-size: var(--starter-small-lg-font-size) !default;
+$caption-font-size: var(--starter-caption-font-size) !default;
+$caption-sm-font-size: var(--starter-caption-sm-font-size) !default;
+$caption-xs-font-size: var(--starter-caption-xs-font-size) !default;
+$lead-font-size: var(--starter-lead-font-size) !default;
+$lead-lg-font-size: var(--starter-lead-lg-font-size) !default;
+$big-lead-font-size: var(--starter-big-lead-font-size) !default;
+$blockquote-font-size: var(--starter-blockquote-font-size) !default;
+
+// -------------------------------------------------------------------------------
+// Other Variables
+// -------------------------------------------------------------------------------
+$blockquote-footer-font-size: var(--starter-small-font-size) !default;
+$initialism-font-size: var(--starter-small-font-size) !default;
+$code-font-size: var(--starter-small-font-size) !default;
+$kbd-font-size: var(--starter-small-font-size) !default;
+$sub-sup-font-size: 0.5rem !default;
+$legend-font-size: 1rem !default;
+
+$link-decoration: none !default;
+
+// Font Weights
+$font-weight-lighter: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+// Paragraph
+$paragraph-margin-bottom: 1.33rem !default;
+
+// Headings
+$headings-margin-bottom: 1.2rem !default;
+$headings-font-weight: 600 !default;
+$headings-line-height: 1.2 !default;
+
+// Others
+$text-muted: $gray-600 !default;
+$mark-padding: 0.2em !default;
+$dt-font-weight: $font-weight-bold !default;
+$nested-kbd-font-weight: $font-weight-bold !default;
+$lianime-inline-padding: 0.333rem !default;
+
+// Blockquote
+$blockquote-margin-y: 0.666rem !default;
+
+// HR
+$hr-margin-y: 0.666rem !default;
+$hr-height: 1px !default;
+$hr-opacity: 0.25 !default;
+
+// Legend
+$legend-margin-bottom: 0.5rem !default;
+$legend-font-weight: null !default;
+
+// KBD
+$kbd-padding-y: 0.2rem !default;
+$kbd-padding-x: 0.4rem !default;
+
+// List
+$list-inline-padding: 0.5rem !default;
+
+// Caption
+$caption-letter-spacing: null;
