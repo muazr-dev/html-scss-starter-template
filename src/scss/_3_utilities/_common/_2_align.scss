@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------------------------
+### Utilities -> Common -> Align
+--------------------------------------------------------------------------------*/
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.my-auto {
+    margin: auto 0;
+}

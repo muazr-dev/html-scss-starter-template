@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------------------------
+### Utilities -> Common -> Spacing
+--------------------------------------------------------------------------------*/
+.no-margin {
+    margin-bottom: 0;
+}
+
+.pe-empty-space {
+    width: 100%;
+    display: block;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+.no-gap {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .fit-col {
+        margin: 0;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .hide-mobile {
+        display: none;
+    }
+}
